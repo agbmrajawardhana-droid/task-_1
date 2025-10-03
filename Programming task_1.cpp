@@ -4,8 +4,9 @@
 #include <tuple>
 using namespace std;
 
-int main() {
-    // Days of the week
+int main() 
+{
+    // Week_days
     vector<string> days = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
     
     // Corresponding temperatures
@@ -15,7 +16,8 @@ int main() {
     tuple<string, double> warmestDay = make_tuple(days[0], temperatures[0]);
     
     cout << "Weather Report for the Week:\n";
-    for (size_t i = 0; i < days.size(); i++) {
+    for (size_t i = 0; i < days.size(); i++) 
+    {
         cout << days[i] << " - " << temperatures[i] << "°C : ";
         
         // Classification
